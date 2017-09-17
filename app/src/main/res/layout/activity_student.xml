@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:background="@drawable/pen"
+    tools:context="com.proprog.eassignment.StudentActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="1.6">
+
+        <ImageView
+            android:onClick="view_student_data"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:background="@drawable/stuicon"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_weight="3">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CFDCFD"
+            android:alpha="0.7"
+            android:id="@+id/listView"
+            android:choiceMode="singleChoice" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/enroll"
+        style="?android:textAppearanceLarge"
+        android:layout_width="220dp"
+        android:layout_height="3dp"
+        android:layout_weight="1"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="#44AABB"
+        android:gravity="center"
+        android:text="Enroll In Course"/>
+
+</LinearLayout>
